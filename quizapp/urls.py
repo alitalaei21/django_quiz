@@ -13,5 +13,5 @@ urlpatterns = [
     path('api/survey/<int:survey_id>/submit/', SubmitSurveyResponseAPIView.as_view(), name='submit-survey'),
     path('api/companies/', CompanyListAPIView.as_view(), name='company_list'),
     path('api/customers/', TenantCustomerListAPIView.as_view(), name='tenant-customers'),
-path('api/tag/', include(router.urls)),
+    path('api/tag/', include(router.urls)),
 ]
